@@ -11,7 +11,6 @@ public class Square extends Shape {
         this.height = height;
     }
 
-
     @Override
     public double getArea() {
         double area = length * height;
@@ -20,6 +19,6 @@ public class Square extends Shape {
 
     @Override
     public void printDimensions() {
-        System.out.println("Length: " + length + " Height: " + height);
+        System.out.println("SQUARE DIMENSIONS\n Length: " + length + " Height: " + height);
     }
 }
