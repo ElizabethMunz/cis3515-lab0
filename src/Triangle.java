@@ -16,12 +16,15 @@ public class Triangle extends Shape {
     @Override
     public double getArea() {
         double s = 0.5 * (side1 + side2 + side3);
-        double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-        return area;
+        return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
 
     @Override
     public void printDimensions() {
-        System.out.println("TRIANGLE DIMENSIONS\n Side 1: " + side1 + " Side 2: " + side2 + " Side 3: " + side3);
+        System.out.println("Dimensions of " + getName() + "\n   Side 1: " + side1 + "\n   Side 2: " + side2 + "\n   Side 3: " + side3);
+    }
+
+    public void printArea() {
+        System.out.println("Area of "+ getName() + "\n   " + getArea());
     }
 }

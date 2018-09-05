@@ -17,6 +17,10 @@ public class Circle extends Shape {
 
     @Override
     public void printDimensions() {
-        System.out.println("CIRCLE DIMENSIONS\n Radius:" + radius);
+        System.out.println("Dimensions of " + getName() + "\n   Radius: " + radius);
+    }
+
+    public void printArea() {
+        System.out.println("Area of "+ getName() + "\n   " + getArea());
     }
 }
